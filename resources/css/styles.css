@@ -1,7 +1,5 @@
 html{
   box-sizing: border-box;
-  scroll-behavior: smooth
-  /* This styling only affects direct children of html */
 }
 
 body {
@@ -50,6 +48,7 @@ body {
 .intro-container{
   display: flex;
   flex-flow: row wrap;
+  width: 90%;
   gap: 0;
   flex: 1;
   margin: 0px auto;
@@ -105,9 +104,10 @@ footer{
   justify-content: center;
 }
 
-/* Education section */
-.education-subheading{
+/* Subheadings in the experience section */
+.experience-subheading{
   color: rgb(223, 38, 115);
+  font-size: 12px;
   text-align: left;
   padding: 40px;
 }
@@ -131,12 +131,6 @@ footer{
 }
 
 /* Job Experience Section */
-.job-subheading{
-  color: rgb(223, 38, 115);
-  text-align: left;
-  padding: 40px;
-}
-
 .job-container{
   display: flex;
   flex-flow: row wrap;
@@ -156,12 +150,6 @@ footer{
 }
 
 /* Skills section styling */
-.skills-subheading{
-  color: rgb(223, 38, 115);
-  text-align: left;
-  padding: 40px;
-}
-
 .skills-container{
   display: flex;
   flex-flow: row wrap;
@@ -181,11 +169,11 @@ footer{
 }
 
 #contact-subheading,
-.login-subheading,
-.register-subheading{
+.page-subheading{
   color: rgb(223, 38, 115);
   text-align: center;
   letter-spacing: 2px;
+  font-size: 18px;
   padding: 10px;
 }
 
@@ -241,13 +229,6 @@ footer{
   font-size: 1em;
 }
 
-.contact-box input:focus,
-.contact-box textarea:focus,
-.login-box input:focus,
-.register-box input:focus{
-  border: 3px solid rgb(223, 38, 115);
-}
-
 .contact-box textarea{
   resize: none;
   font-family: Georgia, serif;
@@ -264,6 +245,14 @@ footer{
   background-color: black;
 }
 
+.contact-box button:hover,
+.login-box button:hover,
+.register-box button:hover{
+  background-color: white;
+}
+
+
+
 .to-top{
   display: flex;
   flex-flow: row wrap;
@@ -271,16 +260,19 @@ footer{
 }
 
 .to-top a{
+  background-color: white;
   color: rgb(223, 38, 115);
+  font-weight: bold;
   text-decoration: none;
   border: 1px solid white;
   padding: 10px;
   border-radius: 4px;
+  margin: 20px;
 }
 
 .link-toregister a{
   color: rgb(223, 38, 115);
-  font-size: large;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -305,6 +297,126 @@ footer{
 .contact-me a:hover {
   color: rgb(223, 38, 115);
   opacity: 1.0;
+}
+
+.calc-container{
+  margin: 0  auto 30px auto;
+  border: 1px solid white;
+  width: 300px;
+  border-radius: 8px;
+  
+}
+
+.table{
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+#display{
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1rem;
+  border: none;
+}
+
+td{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 25px;
+  text-align: center;
+}
+
+td:hover{
+  background-color: black;
+  color: white;
+}
+
+.equal-to{
+  background-color: black;
+  border-color: white;
+  color: rgb(223, 38, 115);
+  font-size: 25px;
+}
+
+.equal-to:hover{
+  background-color: white;
+  color: rgb(223, 38, 115);
+}
+
+.calculator{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 300px;
+  border-radius: 8px;
+  margin: 0 auto;
+  border: 1px white;
+  background-color: black;
+  
+}
+
+.display textarea{
+  width: 100%;
+  resize: none;
+  background-color: white;
+  margin: 1px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.button-area{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: white;
+  width: 100%;
+list-style: none;
+  color: black;
+  
+  border: 1px solid black;
+  border-radius: 8px;
+  
+}
+
+
+
+ .row-1,.row-2,.row-3,.row-4,.row-5{
+  margin: 2px; 
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  margin: 1px;
+ 
+  border: 1px solid crimson;
+  border: 4px;
+  
+} 
+
+
+.keypad-1 p{
+  border-color: red;
+  margin: 1px;
+}
+.keypad p{
+  /* border: 1px solid red; */
+  background-color: white;
+  padding: 15px;
+  margin: 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* declare flex property on a flex item */
+  /* flex: 1; */
+  color: black;
+  font-size: 25px;
+  width: 25%;
 }
 
 
