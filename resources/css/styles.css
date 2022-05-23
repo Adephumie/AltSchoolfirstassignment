@@ -13,7 +13,7 @@ body {
 /* navbar container */
 .menu{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: center;
   list-style: none;
   padding: 10px 0;
@@ -44,10 +44,23 @@ body {
   font-weight: bold;
 }
 
+@media all and (max-width:800px){
+  .menu{
+    justify-content: center;
+  }
+  
+}
+
+@media all and (max-width:500px) {
+  .menu{
+    flex-direction: column;
+  }
+}
+
 /* Container holding the name, goal in AltSchool and Profile picture. */
 .intro-container{
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   width: 90%;
   gap: 0;
   flex: 1;
@@ -55,7 +68,7 @@ body {
 }
 
 .intro{
-  width: 50%;
+  flex-basis: 50%;
   height: 500px;
   padding: 30px;
   line-height: 2em;
@@ -75,9 +88,6 @@ footer{
   height: 500px;
   padding: 30px;
   box-sizing: border-box;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
 }
 
 .intro-2 img{
@@ -96,6 +106,19 @@ footer{
   color: rgb(223, 38, 115);
 }
 
+@media all and (max-width:800px){
+  .intro-container{
+    flex-direction: column;
+  }
+  
+}
+
+@media all and (max-width:500px){
+  .menu{
+    flex-direction: column;
+  }
+}
+
 .experiences{
   margin-bottom: 60px;
   display: flex;
@@ -103,6 +126,8 @@ footer{
   flex-flow: column wrap;
   justify-content: center;
 }
+
+
 
 /* Subheadings in the experience section */
 .experience-subheading{
@@ -120,6 +145,13 @@ footer{
   height: auto;
   justify-content: center;
   margin: 0 auto;
+}
+
+@media screen and (max-width:500px) {
+  .education-container {
+    flex-direction: column;
+  }
+  
 }
 
 .edu-info{
@@ -141,6 +173,15 @@ footer{
   margin: 0 auto;
   padding: 0 auto;
 }
+
+@media screen and (max-width:500px) {
+  .job-container {
+    flex-flow: column wrap;
+    flex: 1 100%;
+  }
+  
+}
+
 
 .job-info{
   width: 50%;
@@ -391,12 +432,13 @@ list-style: none;
   margin: 2px; 
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content:center;
   margin: 1px;
  
   border: 1px solid crimson;
   border: 4px;
+  flex-basis: 1 5%;
   
 } 
 
