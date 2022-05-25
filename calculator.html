@@ -10,6 +10,7 @@
     />
 
     <link rel="stylesheet" href="resources/css/styles.css" />
+    <link rel="stylesheet" href="resources/css/calculator.css" />
     <title>Calculator</title>
   </head>
   <body>
@@ -28,50 +29,45 @@
         <thead>
           <tr>
             <th colspan="4">
-              <textarea
-                name="display"
-                id="display"
-                cols="30"
-                rows="10"
-              ></textarea>
+              <input type="text" name="display" id="display" placeholder="1234" />
             </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>c</td>
-            <td>( )</td>
-            <td>%</td>
-            <td>/</td>
+            <td><input type="button" value="c" /></td>
+            <td><input type="button" value="( )" /></td>
+            <td><input type="button" value="%" /></td>
+            <td><input type="button" value="/" /></td>
           </tr>
           <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>x</td>
+            <td><input type="button" value="7" /></td>
+            <td><input type="button" value="8" /></td>
+            <td><input type="button" value="9" /></td>
+            <td><input type="button" value="x" /></td>
           </tr>
           <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>-</td>
+            <td><input type="button" value="4" /></td>
+            <td><input type="button" value="5" /></td>
+            <td><input type="button" value="6" /></td>
+            <td><input type="button" value="-" /></td>
           </tr>
           <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>+</td>
+            <td><input type="button" value="1" /></td>
+            <td><input type="button" value="2" /></td>
+            <td><input type="button" value="3" /></td>
+            <td><input type="button" value="+" /></td>
           </tr>
           <tr>
-            <td>+/-</td>
-            <td>0</td>
-            <td>.</td>
-            <td class="equal-to">=</td>
+            <td><input type="button" value="+/-" /></td>
+            <td><input type="button" value="0" /></td>
+            <td><input type="button" value="." /></td>
+            <td><input type="button" value="=" /></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="to-top">
+    <div class="navigation-link">
       <a href="flexcalculator.html">Click here to view my flexbox calculator</a>
     </div>
   </body>

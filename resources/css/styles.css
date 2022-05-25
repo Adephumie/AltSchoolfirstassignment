@@ -44,21 +44,6 @@ body {
   font-weight: bold;
 }
 
-@media all and (max-width:800px){
-  .menu{
-    justify-content: center;
-  }
-  
-}
-
-@media all and (max-width:500px) {
-  .menu{
-
-    flex-direction: column
-/*     justify-content: center; */
-  }
-}
-
 /* Container holding the name, goal in AltSchool and Profile picture. */
 .intro-container{
   display: flex;
@@ -108,19 +93,6 @@ footer{
   color: rgb(223, 38, 115);
 }
 
-@media all and (max-width:800px){
-  .intro-container{
-    flex-direction: column;
-  }
-  
-}
-
-@media (min-width:300px) and (max-width:500px){
-  .menu{
-    flex-direction: column;
-  }
-}
-
 .experiences{
   margin-bottom: 60px;
   display: flex;
@@ -128,8 +100,6 @@ footer{
   flex-flow: column wrap;
   justify-content: center;
 }
-
-
 
 /* Subheadings in the experience section */
 .experience-subheading{
@@ -147,13 +117,6 @@ footer{
   height: auto;
   justify-content: center;
   margin: 0 auto;
-}
-
-@media screen and (max-width:500px) {
-  .education-container {
-    flex-direction: column;
-  }
-  
 }
 
 .edu-info{
@@ -175,15 +138,6 @@ footer{
   margin: 0 auto;
   padding: 0 auto;
 }
-
-@media screen and (max-width:500px) {
-  .job-container {
-    flex-flow: column wrap;
-    flex: 1 100%;
-  }
-  
-}
-
 
 .job-info{
   width: 50%;
@@ -263,6 +217,7 @@ footer{
   border: 1px solid white;
   background-color: white;
   color: black;
+  outline: none;
   text-transform: capitalize;
 }
 
@@ -294,26 +249,29 @@ footer{
   background-color: white;
 }
 
+#priority{
+  padding: 10px 20px;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: Georgia, serif;
+}
 
-
-.to-top{
+.navigation-link{
   display: flex;
-  flex-flow: row wrap;
   justify-content: right;
 }
 
-.to-top a{
-  background-color: white;
+.navigation-link a{
   color: rgb(223, 38, 115);
   font-weight: bold;
   text-decoration: none;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 4px;
   margin: 20px;
 }
 
 .link-toregister a{
+  padding-left: 10px;
   color: rgb(223, 38, 115);
   font-size: 20px;
   text-decoration: none;
@@ -342,58 +300,7 @@ footer{
   opacity: 1.0;
 }
 
-.calc-container{
-  margin: 0  auto 30px auto;
-  border: 1px solid white;
-  width: 300px;
-  border-radius: 8px;
-  
-}
-
-.table{
-  width: 100%;
-  border: 1px solid white;
-  border-radius: 4px;
-}
-
-#display{
-  width: 100%;
-  box-sizing: border-box;
-  resize: none;
-  font-family: Georgia, serif;
-  font-size: 18px;
-  line-height: 1rem;
-  border: none;
-}
-
-td{
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  padding: 15px;
-  border-radius: 4px;
-  font-size: 25px;
-  text-align: center;
-}
-
-td:hover{
-  background-color: black;
-  color: white;
-}
-
-.equal-to{
-  background-color: black;
-  border-color: white;
-  color: rgb(223, 38, 115);
-  font-size: 25px;
-}
-
-.equal-to:hover{
-  background-color: white;
-  color: rgb(223, 38, 115);
-}
-
-.calculator{
+/* .calculator{
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -428,9 +335,7 @@ list-style: none;
   
 }
 
-
-
- .row-1,.row-2,.row-3,.row-4,.row-5{
+.row-1,.row-2,.row-3,.row-4,.row-5{
   margin: 2px; 
   width: 100%;
   display: flex;
@@ -461,7 +366,7 @@ list-style: none;
   color: black;
   font-size: 25px;
   width: 25%;
-}
+} */
 
 
 

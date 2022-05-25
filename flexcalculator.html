@@ -10,6 +10,7 @@
     />
 
     <link rel="stylesheet" href="resources/css/styles.css" />
+    <link rel="stylesheet" href="resources/css/calculator.css">
     <title>Flexbox Calculator Project</title>
   </head>
   <body>
@@ -23,42 +24,42 @@
     </div>
     <div class="page-subheading"><h2>Flexbox Calculator</h2></div>
     <div class="calculator">
-      <div class="display">
-        <div class="display">
-          <textarea name="display" id="display" cols="30" rows="10"></textarea>
+      <div class="screen">
+        <div>
+          <input type="text" name="output" id="output">
         </div>
       </div>
       <div class="button-area">
-        <div class="row-1">
-          <div class="keypad"><p>c</p></div>
-          <div class="keypad"><p>( )</p></div>
-          <div class="keypad"><p>%</p></div>
-          <div class="keypad"><p>/</p></div>
+        <div class="row1">
+          <div class="keypad"><input type="button" value="c" /></div>
+          <div class="keypad"><input type="button" value="( )" /></div>
+          <div class="keypad"><input type="button" value="%" /></div>
+          <div class="keypad"><input type="button" value="/" /></div>
         </div>
-        <div class="row-2">
-          <div class="keypad"><p>7</p></div>
-          <div class="keypad"><p>8</p></div>
-          <div class="keypad"><p>9</p></div>
-          <div class="keypad"><p>x</p></div>
+        <div class="row2">
+          <div class="keypad"><input type="button" value="7" /></div>
+          <div class="keypad"><input type="button" value="8" /></div>
+          <div class="keypad"><input type="button" value="9" /></div>
+          <div class="keypad"><input type="button" value="x" /></div>
         </div>
-        <div class="row-3">
-          <div class="keypad"><p>4</p></div>
-          <div class="keypad"><p>5</p></div>
-          <div class="keypad"><p>6</p></div>
-          <div class="keypad"><p>-</p></div>
-        </div>
-        <div class="row-4">
-          <div class="keypad"><p>1</p></div>
-          <div class="keypad"><p>2</p></div>
-          <div class="keypad"><p>3</p></div>
-          <div class="keypad"><p>+</p></div>
-        </div>
-        <div class="row-5">
-          <div class="keypad"><p>+/-</p></div>
-          <div class="keypad"><p>0</p></div>
-          <div class="keypad"><p>.</p></div>
-          <div class="keypad"><p>=</p></div>
-        </div>
+        <!-- <div class="row3"> -->
+          <div class="keypad"><input type="button" value="4" /></div>
+          <div class="keypad"><input type="button" value="5" /></div>
+          <div class="keypad"><input type="button" value="6" /></div>
+          <div class="keypad"><input type="button" value="-" /></div>
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+          <div class="keypad"><input type="button" value="1" /></div>
+          <div class="keypad"><input type="button" value="2" /></div>
+          <div class="keypad"><input type="button" value="3" /></div>
+          <div class="keypad"><input type="button" value="+" /></div>
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+          <div class="keypad"><input type="button" value="+/-" /></div>
+          <div class="keypad"><input type="button" value="0" /></div>
+          <div class="keypad"><input type="button" value="." /></div>
+          <div class="keypad"><input type="button" value="=" /></div>
+        <!-- </div> -->
       </div>
     </div>
   </body>
