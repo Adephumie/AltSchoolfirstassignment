@@ -349,16 +349,3 @@ list-style: none;
   border-color: red;
   margin: 1px;
 }
-.keypad p{
-  /* border: 1px solid red; */
-  background-color: white;
-  padding: 15px;
-  margin: 1px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  /* declare flex property on a flex item */
-  /* flex: 1; */
-  color: black;
-  font-size: 25px;
-  width: 25%;
-} */
