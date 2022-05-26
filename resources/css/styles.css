@@ -311,7 +311,6 @@ footer{
   background-color: black;
   
 }
-
 .display textarea{
   width: 100%;
   resize: none;
@@ -321,7 +320,6 @@ footer{
   border-radius: 8px;
   border: 1px solid white;
 }
-
 .button-area{
   display: flex;
   flex-flow: row wrap;
@@ -334,7 +332,6 @@ list-style: none;
   border-radius: 8px;
   
 }
-
 .row-1,.row-2,.row-3,.row-4,.row-5{
   margin: 2px; 
   width: 100%;
@@ -348,8 +345,6 @@ list-style: none;
   flex-basis: 1 5%;
   
 } 
-
-
 .keypad-1 p{
   border-color: red;
   margin: 1px;
@@ -367,35 +362,3 @@ list-style: none;
   font-size: 25px;
   width: 25%;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
